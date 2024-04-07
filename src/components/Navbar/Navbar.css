@@ -5,7 +5,9 @@
     align-items: center;
 }
 .navbar .logo{
-    width: 150px;
+    font-size: 40px;
+    font-weight: 700;
+    color: tomato;
 }
 .navbar-menu{
     display: flex;
