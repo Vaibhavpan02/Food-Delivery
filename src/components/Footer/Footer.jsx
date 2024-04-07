@@ -7,9 +7,9 @@ const Footer = () => {
     <div className='footer' id='footer'>
         <div className="footer-content">
             <div className="footer-content-left">
-                <img src={assets.logo} alt="" />
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur sapiente ipsam sint voluptate quae vitae incidunt soluta tenetur iusto reprehenderit, alias dolore quos aut magni modi minima doloremque beatae.</p>
-           <div className="footer-social-icons">
+                <h2 className='logo'>FoodiePoint.</h2>
+                <p>Say goodbye to the hassle of meal planning and cooking, and hello to effortless dining satisfaction. With our user-friendly interface, secure payment options, and lightning-fast delivery, indulgence is just a few clicks away.</p>
+         <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="" />
             <img src={assets.linkedin_icon} alt="" />
             <img src={assets.twitter_icon} alt="" />
