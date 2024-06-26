@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='footer' id='footer'>
         <div className="footer-content">
             <div className="footer-content-left">
-                <h2 className='logo'>FoodiePoint.</h2>
+                <h2 className='logo'>Foodie</h2>
                 <p>Say goodbye to the hassle of meal planning and cooking, and hello to effortless dining satisfaction. With our user-friendly interface, secure payment options, and lightning-fast delivery, indulgence is just a few clicks away.</p>
          <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="" />
