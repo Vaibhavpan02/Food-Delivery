@@ -10,9 +10,9 @@ const Footer = () => {
                 <h2 className='logo'>Foodie</h2>
                 <p>Say goodbye to the hassle of meal planning and cooking, and hello to effortless dining satisfaction. With our user-friendly interface, secure payment options, and lightning-fast delivery, indulgence is just a few clicks away.</p>
          <div className="footer-social-icons">
-            <img src={assets.facebook_icon} alt="" />
-            <img src={assets.linkedin_icon} alt="" />
-            <img src={assets.twitter_icon} alt="" />
+            <img src={assets.facebook_icon} alt="https://www.facebook.com" />
+            <img src={assets.linkedin_icon} alt="https://www.linkedin.com/in" />
+            <img src={assets.twitter_icon} alt="https://x.com/?lang=en" />
            </div>
             </div> 
             <div className="footer-content-center">
