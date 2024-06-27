@@ -1,20 +1,40 @@
-.place-order{
+.place-order {
     display: flex;
     align-items: start;
     justify-content: space-between;
     gap: 50px;
     margin-top: 100px;
+    flex-direction: column; /* Default to column for small screens */
 }
-.place-order-left{
+
+.place-order-left,
+.place-order-right {
     width: 100%;
-    max-width: max(30%,500px);
+    max-width: 100%; /* Default to full width for small screens */
 }
-.place-order-left .title{
+
+/* Desktop and larger screens */
+@media (min-width: 768px) {
+    .place-order {
+        flex-direction: row; /* Switch to row for larger screens */
+    }
+
+    .place-order-left {
+        max-width: max(30%, 500px);
+    }
+
+    .place-order-right {
+        max-width: max(40%, 500px);
+    }
+}
+
+.place-order-left .title {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 50px;
 }
-.place-order-left input{
+
+.place-order-left input {
     margin-bottom: 15px;
     width: 100%;
     padding: 10px;
@@ -22,14 +42,51 @@
     border-radius: 4px;
     outline-color: tomato;
 }
-.place-order-left .multi-fields{
+
+.place-order-left .multi-fields {
     display: flex;
     gap: 10px;
 }
-.place-order-right{
-    width: 100%;
-    max-width: max(40%,500px);
-}
-.place-order .cart-total button{
+
+.place-order .cart-total button {
     margin-top: 30px;
+}
+
+/* Tablet screens */
+@media (min-width: 600px) and (max-width: 767px) {
+    .place-order-left,
+    .place-order-right {
+        max-width: 100%;
+    }
+
+    .place-order {
+        flex-direction: column; /* Stack items for better readability */
+    }
+
+    .place-order-left,
+    .place-order-right {
+        max-width: 100%;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 599px) {
+    .place-order {
+        gap: 20px; /* Reduce gap for smaller screens */
+        margin-top: 50px; /* Adjust margin for smaller screens */
+    }
+
+    .place-order-left .title {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-bottom: 30px;
+    }
+
+    .place-order-left input {
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .place-order .cart-total button {
+        margin-top: 20px;
+    }
 }
