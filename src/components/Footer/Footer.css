@@ -1,4 +1,4 @@
-.footer{
+.footer {
     color: #d9d9d9;
     background-color: #323232;
     display: flex;
@@ -6,39 +6,46 @@
     align-items: center;
     gap: 20px;
     padding: 20px 8vw;
-    padding-top: 80px;
-    margin-top: 100px;
+    padding-top: 20px;
+    margin-top: 60px;
 }
-.footer .footer-content .footer-content-left h2{
-    font-size: 45px;
-    font-weight: 600;
-    color: tomato;
-}
-.footer-content{
+
+.footer .footer-content {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 80px;
 }
-.footer-content-left, .footer-content-right, .footer-content-center{
+
+.footer .footer-content-left, .footer .footer-content-right, .footer .footer-content-center {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 20px;
 }
-.footer-content-left li, .footer-content-right li, .footer-content-center li{
+
+.footer .footer-content-left h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: tomato;
+}
+
+.footer .footer-content-left li, .footer .footer-content-right li, .footer .footer-content-center li {
     list-style: none;
     margin-bottom: 10px;
     cursor: pointer;
 }
-.footer-content-right h2, .footer-content-center h2{
+
+.footer .footer-content-right h2, .footer .footer-content-center h2 {
     color: white;
 }
-.footer-social-icons img{
+
+.footer .footer-social-icons img {
     width: 40px;
     margin-right: 15px;
 }
-.footer hr{
+
+.footer hr {
     width: 100%;
     height: 2px;
     margin: 20px 0;
@@ -46,13 +53,42 @@
     border: none;
 }
 
-@media (max-width:750px){
-    .footer-content{
+/* Responsive styles */
+@media (max-width: 750px) {
+    .footer .footer-content {
         display: flex;
         flex-direction: column;
-        gap: 35px;
+        gap: 5px;
     }
-    .footer-copyright{
+
+    .footer .footer-content-left h2 {
+        font-size: 30px;
+    }
+
+    .footer .footer-content-left, .footer .footer-content-right, .footer .footer-content-center {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .footer-content-left li, .footer .footer-content-right li, .footer .footer-content-center li {
+        text-align: center;
+    }
+
+    .footer .footer-social-icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer .footer-social-icons img {
+        margin-right: 10px;
+    }
+
+    .footer hr {
+        margin: 10px auto;
+    }
+
+    .footer .footer-copyright {
         text-align: center;
     }
 }
